@@ -7,13 +7,14 @@ html {
 body {
     font-family: v.$fontPrimary;
     font-size: 1rem;
+    margin: 0;
 }
 
 p {
     color: v.$black;
     font-size: 1.25rem;
 }
-.contenedor {
+.wrapper {
     inline-size: 95%;
     max-inline-size: 75rem;
     margin: 0 auto;

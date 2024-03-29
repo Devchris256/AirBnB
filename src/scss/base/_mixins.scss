@@ -20,7 +20,7 @@
 }
 
 
-@mixin boton($bgColor, $colorTexto) {
+@mixin button($bgColor, $colorTexto) {
     background-color: $bgColor;
     padding: 1.25rem 2.5rem;
     color: $colorTexto;
@@ -40,3 +40,10 @@
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
 }
+
+
+@mixin format($img) {
+    @supports(background-image: $img) {
+        background-image: $img;
+    }
+} 

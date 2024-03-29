@@ -1,0 +1,26 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.header {
+    @include m.format(url('../img/header.jpg'));
+    @include m.format(url('../img/header.webp'));
+    @include m.format(url('../img/header.avif'));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: 1.875rem 12.5rem;
+
+
+    &__search {
+        margin-block-start: 3.125rem;
+        text-align: center;
+    }
+
+    &__search-label {
+        color: v.$black;
+    }
+
+    &__search-button {
+        @include m.button(v.$white, v.$primary);
+    }
+}
