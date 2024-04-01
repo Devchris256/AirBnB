@@ -329,4 +329,37 @@ a {
     display: inline-block;
   }
 }
+
+.experiences__list {
+  display: grid;
+  grid-template-columns: repeat(3, 18.75rem);
+  -webkit-column-gap: 1.15rem;
+     -moz-column-gap: 1.15rem;
+          column-gap: 1.15rem;
+  overflow-y: hidden;
+  overflow-x: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+.experiences__list > * {
+  scroll-snap-align: center;
+}
+@media (min-width: 768px) {
+  .experiences__list {
+    display: grid;
+    gap: 1.15rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.experience__img {
+  border-radius: 0.625rem;
+}
+.experience__title {
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+.experience__text {
+  font-size: 1.125rem;
+}
 /*# sourceMappingURL=app.css.map */
