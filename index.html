@@ -3,6 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encuentra alojamientos únicos y experiencias auténticas en Airbnb. Explora nuestra plataforma para huéspedes y anfitriones. ¡Haz de cada viaje una experiencia inolvidable!">
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./build/css/app.css">
     <title>AirBnB</title>
 </head>
@@ -43,20 +61,20 @@
                         <input type="number"  class="form__input" id="number" placeholder="¿Cuántos?">
                     </div> <!-- campo -->
                     <div class="form__campo">
-                        <input type="submit"  class="form__submit" value="buscar">
+                        <input type="submit"  class="form__submit" value="buscar" title="buscar">
                     </div> <!-- campo -->
                 </form> <!-- formulario -->
 
                 <div class="header__search">
                     <p class="header__seacrh-label">¿No sabes a donde ir?</p>
-                    <a href="#" class="header__search-button">Búsqueda Flexible</a>
+                    <a href="#" class="header__search-button" title="busqueda flexible">Búsqueda Flexible</a>
                 </div> <!-- search -->
             </div> <!-- content -->
         </div> <!-- wrapper -->
     </header>
-    <section class="destinations section">
+    <section class="destinations section" aria-labelledby="alojamientos">
         <div class="wrapper">
-            <h2 class="destinations__title">Descubre alojamientos populares</h2>
+            <h2 class="destinations__title" id="alojamientos">Descubre alojamientos populares</h2>
             <ul class="destinations__list">
                 <li class="destination">
                     <div class="destination__image">
@@ -165,9 +183,9 @@
             </ul>
         </div> <!-- wrapper -->
     </section> <!-- destinations -->
-    <section class="places section">
+    <section class="places section" aria-labelledby="vivir">
         <div class="wrapper">
-            <h2 class="places__title">Vive en cualquier lugar del mundo</h2>
+            <h2 class="places__title" id="vivir">Vive en cualquier lugar del mundo</h2>
             <div class="places__content">
                 <div class="place">
                     <picture>
@@ -204,12 +222,12 @@
             </div>
         </div> <!-- wrapper -->    
     </section> <!-- places -->
-    <section class="host section">
+    <section class="host section" aria-labelledby="anfitrion">
         <div class="wrapper">
             <div class="host__content">
-                <h2 class="host__title">Animate a ser anfitrión</h2>
+                <h2 class="host__title" id="anfitrion">Animate a ser anfitrión</h2>
                 <p class="host__text">Comparte tu espacio para ganar dinero y aprovechar nuevas oportunidaes</p>
-                <a href="#" class="host__link">Más Información</a>
+                <a href="#" class="host__link" title="Más Información">Más Información</a>
             </div>
         </div>
     </section> <!-- anfitrion -->
@@ -254,8 +272,8 @@
         <div class="wrapper">
             <div class="footer__content">
                 <div class="footer__widget">
-                    <nav class="footer__nav">
-                        <h3 class="footer__name">acerca de</h3>
+                    <nav class="footer__nav" aria-labelledby="acerca">
+                        <h3 class="footer__name" id="acerca">acerca de</h3>
                         <a href="#" class="footer__link">Historia de AirBnB</a>
                         <a href="#" class="footer__link">Mision y Valores</a>
                         <a href="#" class="footer__link">Novedades</a>
@@ -263,8 +281,8 @@
                     </nav>
                 </div> <!-- widget -->
                 <div class="footer__widget">
-                    <nav class="footer__nav">
-                        <h3 class="footer__name">Comunidad</h3>
+                    <nav class="footer__nav" aria-labelledby="comunidad">
+                        <h3 class="footer__name" id="comunidad">Comunidad</h3>
                         <a href="#" class="footer__link">Eventos</a>
                         <a href="#" class="footer__link">Recomendaciones</a>
                         <a href="#" class="footer__link">Consejos de viaje</a>
@@ -272,8 +290,8 @@
                     </nav>
                 </div> <!-- widget -->
                 <div class="footer__widget">
-                    <nav class="footer__nav">
-                        <h3 class="footer__name">Anfitrión</h3>
+                    <nav class="footer__nav" aria-labelledby="anfi">
+                        <h3 class="footer__name" id="anfi">Anfitrión</h3>
                         <a href="#" class="footer__link">Guia para principiantes</a>
                         <a href="#" class="footer__link">Gestión de reservas</a>
                         <a href="#" class="footer__link">Politicas y normas</a>
@@ -281,8 +299,8 @@
                     </nav>
                 </div> <!-- widget -->
                 <div class="footer__widget">
-                    <nav class="footer__nav">
-                        <h3 class="footer__name">Asistencia</h3>
+                    <nav class="footer__nav" aria-labelledby="asistencia">
+                        <h3 class="footer__name" id="asistencia">Asistencia</h3>
                         <a href="#" class="footer__link">Centro de Ayuda</a>
                         <a href="#" class="footer__link">Contacto con soporte</a>
                         <a href="#" class="footer__link">Emergencia</a>
@@ -291,7 +309,7 @@
                 </div> <!-- widget -->
             </div>
             <div class="footer__barra">
-                <nav class="footer__barranav">
+                <nav class="footer__barranav" aria-label="Otros">
                     <a href="#" class="footer__link footer__link--barra">Politica de Privacidad</a>
                     <a href="#" class="footer__link footer__link--barra">Términos y condiciones</a>
                     <a href="#" class="footer__link footer__link--barra">Mapa del sitio</a>
