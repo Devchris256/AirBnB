@@ -1,0 +1,32 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.destinations {
+
+    &__list {
+        @include m.grid(1, 1.25rem);
+        @include m.tablet { 
+            @include m.grid(2, 1.25rem);
+        }
+        @include m.desktop { 
+            @include m.grid(4, 1.25rem);
+        }
+    }
+}
+
+.destination {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.25rem;
+
+    &__img {
+        inline-size: 8.75rem;
+    }
+
+    &__name, 
+    &__distance {
+        margin: 0;
+    }
+
+}    

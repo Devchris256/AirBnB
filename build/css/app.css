@@ -49,7 +49,7 @@ ul {
   margin: 0;
 }
 
-.seccion {
+.section {
   padding: 1.25rem 0;
 }
 
@@ -72,6 +72,10 @@ h3 {
 
 a {
   text-decoration: none;
+}
+
+[class$=__title] {
+  margin: 1.25rem 0;
 }
 
 .header {
@@ -196,5 +200,38 @@ a {
     align-items: center;
     gap: 2.5rem;
   }
+}
+
+.destinations__list {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .destinations__list {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .destinations__list {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.destination {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.25rem;
+}
+.destination__img {
+  inline-size: 8.75rem;
+}
+.destination__name, .destination__distance {
+  margin: 0;
 }
 /*# sourceMappingURL=app.css.map */
