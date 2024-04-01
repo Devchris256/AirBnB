@@ -362,4 +362,54 @@ a {
 .experience__text {
   font-size: 1.125rem;
 }
+
+.footer {
+  background-color: #f3f3f3;
+  border-top: 1px solid #cecece;
+  padding-top: 3.125rem;
+}
+@media (min-width: 768px) {
+  .footer__content {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .footer__content {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.footer__name {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+.footer__link {
+  display: block;
+  color: #686868;
+  font-size: 0.875rem;
+  margin-bottom: 0.625rem;
+}
+.footer__barra {
+  border-top: 1px solid #cecece;
+  margin-top: 1.25rem;
+  padding: 1.25rem 0;
+}
+.footer__barranav {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .footer__barranav {
+    flex-direction: row;
+    gap: 1.25rem;
+  }
+}
+.footer__link--barra::before {
+  content: " - ";
+  -webkit-margin-start: 0.25rem;
+          margin-inline-start: 0.25rem;
+}
 /*# sourceMappingURL=app.css.map */
