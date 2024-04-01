@@ -47,3 +47,13 @@
         background-image: $img;
     }
 } 
+
+@mixin scrollHorizontal {
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    > * {
+        scroll-snap-align: center;
+    }
+}
